@@ -1,25 +1,8 @@
 # Video_transcription
 
-A Video Transcription Project to transcribe text from the given video on the browser.
+A Video Transcription Project to transcribe text from the given video on the browser using whisper AI model.
 
-
-## Docker
-
-Install Docker - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
-
-Build & Run the container
-```bash
-  docker build -t dockerfile .
-  docker run -d -p 8080:5000 dockerfile:latest
-```
-
-vist
-```bash
-  http://127.0.0.1:8080/ 
-```
-
-## Run Locally
-
+## Setup
 Install python3.8.10 version with https://www.python.org/downloads/
 
 Clone the project
@@ -34,6 +17,22 @@ Go to the project directory
   cd video_transcription
 ```
 
+Choose one of the following options to set up the project locally or using Docker.
+
+### 1. Docker
+
+Install Docker - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+
+Build & Run the container
+```bash
+  docker build -t dockerfile .
+  docker run -d -p 8080:5000 dockerfile:latest
+```
+
+vist - [http://127.0.0.1:8080/](http://127.0.0.1:8080/ )
+
+### 2. Run Locally
+
 Install dependencies
 
 ```bash
@@ -42,12 +41,12 @@ Install dependencies
 
   # install pip for python
   sudo apt-get install python3-pip python-dev
-
-  # install virtualenv using pip
-  pip install virtualenv
   
   # create virtual envionment for python
-  python -m venv your_env_name
+  python3 -m venv .env
+
+  # activate env
+  source .env/bin/activate
 
   # install dependencies
   pip install -r requirements.txt
