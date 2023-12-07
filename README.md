@@ -60,6 +60,8 @@ Start the server
   python3 wsgi.py
 ```
 
+*Note: Currently, the model is configured to run on the CPU, even if a GPU is available.*
+
 ## Demo
 
 https://github.com/mukunthan007/video_transcription/assets/50894477/d64948cd-5e18-44be-966a-fe389a509352
