@@ -3,7 +3,6 @@
 A Video Transcription Project to transcribe text from the given video on the browser using whisper AI model.
 
 ## Setup
-Install python3.8.10 version with https://www.python.org/downloads/
 
 Clone the project
 
@@ -39,14 +38,17 @@ Install dependencies
   # on Ubuntu or Debian
   sudo apt update && sudo apt install ffmpeg
 
+  # install python
+  sudo apt-get install python3.8
+
   # install pip for python
   sudo apt-get install python3-pip python-dev
   
   # create virtual envionment for python
-  python3 -m venv .env
+  python3 -m venv .venv
 
   # activate env
-  source .env/bin/activate
+  source .venv/bin/activate
 
   # install dependencies
   pip install -r requirements.txt
@@ -60,7 +62,7 @@ Start the server
 
 ## Demo
 
-https://github.com/mukunthan007/video_transcription/assets/50894477/54580616-338e-4c1e-8273-f8f03bde6cf5
+https://github.com/mukunthan007/video_transcription/assets/50894477/d64948cd-5e18-44be-966a-fe389a509352
 
 ## Performance Comparison
 
