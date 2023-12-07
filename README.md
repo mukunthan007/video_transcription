@@ -43,7 +43,7 @@ Install dependencies
 
   # install pip for python
   sudo apt-get install python3-pip python-dev
-  
+
   # create virtual envionment for python
   python3 -m venv .venv
 
